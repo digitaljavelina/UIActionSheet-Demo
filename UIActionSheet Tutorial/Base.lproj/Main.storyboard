@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIActionSheet_Tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qx5-ZR-cfX">
+                                <rect key="frame" x="189" y="20" width="222" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="222" id="UOb-q3-kei"/>
+                                </constraints>
+                                <state key="normal" title="Press me for the action sheet"/>
+                                <connections>
+                                    <action selector="activateActionSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mcy-r3-ZXE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETi-Tm-PcE">
+                                <rect key="frame" x="20" y="81" width="560" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="C72-M9-9Vy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ETi-Tm-PcE" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="5gB-hb-G5M"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ETi-Tm-PcE" secondAttribute="bottom" constant="495" id="8OE-9h-mgW"/>
+                            <constraint firstItem="qx5-ZR-cfX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="8q9-ZZ-pzz"/>
+                            <constraint firstItem="ETi-Tm-PcE" firstAttribute="top" secondItem="qx5-ZR-cfX" secondAttribute="bottom" constant="20" id="LPS-qi-4Ib"/>
+                            <constraint firstItem="ETi-Tm-PcE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OF2-km-zpU"/>
+                            <constraint firstItem="qx5-ZR-cfX" firstAttribute="centerX" secondItem="ETi-Tm-PcE" secondAttribute="centerX" id="feG-Eh-EQK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actionLabel" destination="ETi-Tm-PcE" id="sbZ-Wo-j06"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="885" y="632"/>
+        </scene>
+    </scenes>
+</document>
